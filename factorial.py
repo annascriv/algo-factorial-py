@@ -1,9 +1,11 @@
 def factorial(num):
 	product = 1
-
-	while num>0:
-		product=product*num
-		num=num-1
+	if num == 0:
+		return 1
+	else:
+		while num>0:
+			product=product*num
+			num=num-1
 	return product
 
-print(factorial(5))
+print(factorial(0))
